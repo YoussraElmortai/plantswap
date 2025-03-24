@@ -7,12 +7,15 @@ import { RouterLink, RouterView } from 'vue-router'
     <nav>
       <RouterLink to="/">Home</RouterLink>
       <RouterLink to="/plants">plants</RouterLink>
+      <RouterLink to="/workshops">workshops</RouterLink>
       <RouterLink to="/locations">locations</RouterLink>
     </nav>
   </header>
   <hr />
-
-  <RouterView />
+  <main>
+    <RouterView />
+  </main>
+  <footer>Plantswap is a buurtcampus oost project</footer>
 </template>
 
 <style scoped>
