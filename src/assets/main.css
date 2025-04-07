@@ -7,11 +7,11 @@
 }
 
 :root {
-  --bg-color: ;
+  --bg-color: #c9d8bd;
   --headings: ;
-  --text-color: ;
-  --sec-color: ;
-  --accent-color: ;
+  --text-color: #262f22;
+  --sec-color: #8ea879;
+  --accent-color: #caecaf;
 }
 
 * {
@@ -22,10 +22,22 @@
 
 body {
   height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: ;
 }
 
 main {
   flex-grow: 1;
+  padding: 2rem 3rem;
 }
 
-footer {}
+footer {
+  height: 10vh;
+  padding: 2rem 3rem;
+}
