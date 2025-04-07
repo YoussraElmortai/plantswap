@@ -13,7 +13,12 @@ import { RouterLink, RouterView } from 'vue-router'
   <main>
     <RouterView />
   </main>
-  <footer>Plantswap is a buurtcampus oost project</footer>
+  <footer>
+    <p>
+      Plantswap is a community initiative by
+      <a href="https://www.buurtcampus.amsterdam/" target="_blank">Buurtcampus Oost</a>
+    </p>
+  </footer>
 </template>
 
 <style scoped>

@@ -8,11 +8,19 @@
 
 :root {
   --bg-color: #c9d8bd;
-  --headings: ;
+  --headings: 'MATAO', sans-serif;
   --text-color: #262f22;
   --sec-color: #8ea879;
   --accent-color: #caecaf;
 }
+
+@font-face {
+  font-family: 'MATAO';
+  src: url('') format('');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 * {
   box-sizing: border-box;
@@ -24,12 +32,14 @@ body {
   height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1,
 h2,
 h3 {
-  font-family: ;
+  font-family: var(--headings);
+  text-transform: capitalize;
 }
 
 main {
