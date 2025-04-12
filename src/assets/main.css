@@ -42,9 +42,18 @@ h3 {
   text-transform: capitalize;
 }
 
+nav {
+  font-family: var(--headings);
+  font-weight: bold;
+}
+
 main {
   flex-grow: 1;
   padding: 2rem 3rem;
+}
+
+section {
+  margin-bottom: 3.2rem;
 }
 
 footer {

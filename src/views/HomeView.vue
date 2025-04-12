@@ -1,17 +1,16 @@
 <script setup></script>
 
 <template>
-  <section>
+  <section class="hero">
     <h1>Swap, Grow, Thrive, repeat</h1>
-    <h2></h2>
+    <h2>Connecting community with plants</h2>
   </section>
 
-  <section class="sticky"></section>
   <section class="pillars">
     <article>
       <h3>Vitality</h3>
       <p>
-        Plants do more than beautify your home—they teach you about nature, purify the air, and
+        Plants do more than beautify your home. they teach you about nature, purify the air, and
         boost mental health. Small plants, big perks!
       </p>
     </article>
@@ -19,7 +18,7 @@
     <article>
       <h3>Sustainability</h3>
       <p>
-        Don’t toss dead plants—learn to care for them! Propagate, swap and grow your collection
+        Don’t toss dead plants. learn to care for them! Propagate, swap and grow your collection
         sustainably for free.
       </p>
     </article>
@@ -27,11 +26,27 @@
     <article>
       <h3>Collaboration</h3>
       <p>
-        PlantSwap brings neighbors together through plant swaps—making our community more connected,
+        PlantSwap brings neighbors together through plant swaps making our community more connected,
         lively, and green!
       </p>
     </article>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+.pillars {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 2rem;
+
+  & article {
+    width: 40%;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--sec-color);
+    border-radius: 0.5rem;
+  }
+}
+</style>

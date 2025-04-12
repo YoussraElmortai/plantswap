@@ -25,20 +25,29 @@ import { RouterLink, RouterView } from 'vue-router'
 nav {
   width: 100%;
   font-size: 12px;
-  text-align: center;
   padding: 1.5rem;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
-}
-
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+  background: var(--sec-color);
+  border-radius: 0.5rem;
 }
 
 nav a {
   display: inline-block;
   padding: 0 1rem;
+  font-size: 18px;
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem 1rem;
+  transition: all ease-out 0.2s;
+
+  &:hover {
+    background: var(--accent-color);
+    border-radius: 0.5rem;
+  }
 }
 </style>
