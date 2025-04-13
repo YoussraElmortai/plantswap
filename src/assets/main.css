@@ -11,6 +11,7 @@
   --headings: 'MATAO', sans-serif;
   --text-color: #262f22;
   --sec-color: #8ea879;
+  --orange: #eaa930;
   --accent-color: #caecaf;
 }
 
@@ -43,7 +44,7 @@ h3 {
 }
 
 h1 {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 nav {
