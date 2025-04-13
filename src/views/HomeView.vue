@@ -46,13 +46,22 @@
   gap: 2rem;
 
   & article {
-    width: 40%;
+    width: 100%;
+    height: 8rem;
     display: flex;
     flex-flow: column;
     gap: 1rem;
     padding: 1rem;
     background: var(--sec-color);
     border-radius: 0.5rem;
+
+    &:nth-of-type(2n) {
+      background: var(--accent-color);
+    }
+
+    @media (min-width: 770px) {
+      width: 30%;
+    }
   }
 }
 </style>
