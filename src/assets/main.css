@@ -7,7 +7,7 @@
 }
 
 :root {
-  --bg-color: #e4f3d7;
+  --bg-color: #ebf4e2;
   --headings: 'MATAO', sans-serif;
   --text-color: #262f22;
   --sec-color: #8ea879;
@@ -40,6 +40,10 @@ h2,
 h3 {
   font-family: var(--headings);
   text-transform: capitalize;
+}
+
+h1 {
+  margin-bottom: 2.5rem;
 }
 
 nav {

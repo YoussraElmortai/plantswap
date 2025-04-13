@@ -34,6 +34,12 @@
 </template>
 
 <style scoped>
+.hero {
+  & h1 {
+    margin-bottom: 0.5rem;
+  }
+}
+
 .pillars {
   display: flex;
   flex-flow: row wrap;
