@@ -15,6 +15,7 @@
       <button class="filter_button">High Maintenance</button>
       <button class="filter_button">Moderate Water</button>
       <button class="filter_button">Drought-Tolerant</button>
+      <button class="filter_button">Pet Friendly</button>
     </div>
 
     <div class="wrapper">
@@ -73,14 +74,16 @@
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 2rem;
+  font-size: 20px;
 }
 
 .filter_button {
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
   background-color: var(--accent-color);
   cursor: pointer;
+  font-size: 18px;
 
   &:nth-of-type(2n) {
     background-color: var(--sec-color);
