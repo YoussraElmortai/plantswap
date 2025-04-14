@@ -99,22 +99,30 @@
 .wrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
   gap: 1rem;
 }
 
 .plant_card {
   height: fit-content;
-  width: 20rem;
+  width: 100%;
   background: var(--sec-color);
   border-radius: 0.5rem;
   overflow: hidden;
   padding: 1rem;
 
+  @media (min-width: 770px) {
+    width: 40%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
+
   & img {
     height: 20rem;
     width: 100%;
     object-fit: cover;
+    border-radius: 0.5rem;
   }
 }
 </style>

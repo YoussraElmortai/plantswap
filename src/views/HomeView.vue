@@ -47,7 +47,7 @@
 
   & article {
     width: 100%;
-    height: 8rem;
+    height: auto;
     display: flex;
     flex-flow: column;
     gap: 1rem;
