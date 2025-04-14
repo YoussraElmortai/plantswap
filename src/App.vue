@@ -5,9 +5,12 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Home</RouterLink>
-      <RouterLink to="/plants">plants </RouterLink>
-      <RouterLink to="/workshops">workshops</RouterLink>
+      <RouterLink to="/">Plantswap</RouterLink>
+      <div>
+        <RouterLink to="/plants">plants </RouterLink>
+        <RouterLink to="/workshops">workshops</RouterLink>
+        <RouterLink to="/contact">contact</RouterLink>
+      </div>
     </nav>
   </header>
   <main>
@@ -25,15 +28,14 @@ import { RouterLink, RouterView } from 'vue-router'
 nav {
   width: 100%;
   font-size: 12px;
-  padding: 1.5rem;
+  padding: 2rem 3rem;
   display: flex;
   flex-flow: row;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 nav a.router-link-exact-active {
-  background: var(--sec-color);
-  border-radius: 0.5rem;
+  border-bottom: solid var(--sec-color);
 }
 
 nav a {
@@ -42,12 +44,12 @@ nav a {
   font-size: 18px;
   text-decoration: none;
   color: inherit;
-  padding: 0.5rem 1rem;
+  padding: 0.3rem 1rem;
+  border-bottom: solid transparent;
   transition: all ease-out 0.2s;
 
   &:hover {
-    background: var(--accent-color);
-    border-radius: 0.5rem;
+    border-bottom: solid var(--accent-color);
   }
 }
 </style>

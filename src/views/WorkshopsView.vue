@@ -6,7 +6,19 @@
       acquire new knowledge, and often meet new people as well.
     </p>
   </section>
-  <section class="workshops"></section>
+  <section class="workshops">
+    <article>
+      <img src="" />
+      <div class="workshop_content">
+        <h3></h3>
+        <ul>
+          <li>OBA Linnaeusstraat</li>
+          <li>Gratis</li>
+          <li>Zaterdag 3 juni 2024</li>
+        </ul>
+      </div>
+    </article>
+  </section>
 </template>
 
-<style></style>
+<style scoped></style>
