@@ -23,45 +23,20 @@
         <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
         <div class="plant_content">
           <h3>Monstera</h3>
-          <p></p>
+          <p>
+            Monstera is a popular tropical houseplant known for its large, glossy, fenestrated
+            (hole-filled) leaves.
+          </p>
         </div>
-        <a class="button" href="/plants">More info</a>
-      </article>
-
-      <article class="plant_card">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <div class="plant_content">
-          <h3>Monstera</h3>
-          <p></p>
+        <a class="link" href="/plants">More info</a>
+        <div class="tags">
+          <ul>
+            <li class="tag">Tropical</li>
+            <li class="tag">Fast-Growing</li>
+            <li class="tag">Low Maintenance</li>
+            <li class="tag">Moderate Water</li>
+          </ul>
         </div>
-        <a class="button" href="/plants">More info</a>
-      </article>
-
-      <article class="plant_card">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <div class="plant_content">
-          <h3>Monstera</h3>
-          <p></p>
-        </div>
-        <a class="button" href="/plants">More info</a>
-      </article>
-
-      <article class="plant_card">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <div class="plant_content">
-          <h3>Monstera</h3>
-          <p></p>
-        </div>
-        <a class="button" href="/plants">More info</a>
-      </article>
-
-      <article class="plant_card">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <div class="plant_content">
-          <h3>Monstera</h3>
-          <p></p>
-        </div>
-        <a class="button" href="/plants">More info</a>
       </article>
     </div>
   </section>
@@ -106,6 +81,9 @@
 }
 
 .plant_card {
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
   height: fit-content;
   width: 100%;
   background: var(--sec-color);
@@ -126,6 +104,31 @@
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem;
+  }
+}
+
+.tags {
+  & ul {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 0.5rem;
+    list-style-type: none;
+  }
+}
+
+.tag {
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: var(--accent-color);
+
+  &:nth-of-type(2n) {
+    background-color: var(--orange);
+  }
+
+  &:nth-of-type(3n) {
+    background-color: #9dcd82;
   }
 }
 </style>
