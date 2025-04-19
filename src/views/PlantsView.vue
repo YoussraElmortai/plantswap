@@ -99,6 +99,7 @@
   background-color: var(--accent-color);
   cursor: pointer;
   font-size: 18px;
+  color: inherit;
 
   &:nth-of-type(2n) {
     background-color: var(--sec-color);
@@ -145,6 +146,11 @@
     object-fit: cover;
     border-radius: 0.5rem;
   }
+}
+
+.plant_content {
+  display: flex;
+  flex-flow: column;
 }
 
 .tags {

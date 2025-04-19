@@ -8,7 +8,7 @@
 
 :root {
   --bg-color: #ebf4e2;
-  --headings: 'MATAO', sans-serif;
+  --headings: 'Varent', sans-serif;
   --text-color: #262f22;
   --sec-color: #8ea879;
   --orange: #eaa930;
@@ -16,8 +16,8 @@
 }
 
 @font-face {
-  font-family: 'MATAO';
-  src: url('') format('');
+  font-family: 'Varent';
+  src: url('./fonts/Varent.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -33,7 +33,6 @@ body {
   height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1,
@@ -49,11 +48,16 @@ h1 {
 }
 
 h2 {
-  font-size: 26px;
+  font-size: 30px;
 }
 
 h3 {
-  font-size: 22px;
+  font-size: 24px;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 20px;
 }
 
 nav {
@@ -69,12 +73,23 @@ main {
 .intro {
   & p {
     max-width: 30rem;
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 section {
   margin-bottom: 3.2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  border-bottom: solid 1px;
+  width: fit-content;
+
+  &:hover {
+    color: var(--bg-color);
+  }
 }
 
 footer {

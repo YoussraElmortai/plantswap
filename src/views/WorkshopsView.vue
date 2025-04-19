@@ -95,6 +95,11 @@
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: all 0.2s ease-out;
+  }
+
+  &:hover img {
+    transform: scale(1.03);
   }
 }
 
