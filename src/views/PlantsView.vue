@@ -124,7 +124,7 @@
 .plant_card {
   display: flex;
   flex-flow: column;
-  gap: 1rem;
+  gap: 1.5rem;
   height: fit-content;
   width: 100%;
   background: var(--sec-color);

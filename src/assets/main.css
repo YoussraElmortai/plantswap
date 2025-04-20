@@ -49,6 +49,7 @@ h1 {
 
 h2 {
   font-size: 30px;
+  margin-bottom: 1.5rem;
 }
 
 h3 {
@@ -57,7 +58,7 @@ h3 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 nav {
@@ -86,6 +87,7 @@ section {
   color: inherit;
   border-bottom: solid 1px;
   width: fit-content;
+  font-size: 18px;
 
   &:hover {
     color: var(--bg-color);

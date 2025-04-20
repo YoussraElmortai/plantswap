@@ -3,33 +3,53 @@
 <template>
   <section class="hero">
     <h1>Swap, Grow, Thrive, repeat</h1>
+    <div></div>
     <h2>Connecting community with plants</h2>
   </section>
 
-  <section class="pillars">
-    <article>
-      <h3>Vitality</h3>
-      <p>
-        Plants do more than beautify your home. they teach you about nature, purify the air, and
-        boost mental health. Small plants, big perks!
-      </p>
-    </article>
+  <section class="favorite_plants">
+    <h2>Our favorite plants</h2>
+    <div class="favorite_cards">
+      <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
+      <h3>Monstera</h3>
+    </div>
+    <div class="favorite_cards">
+      <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
+      <h3>Monstera</h3>
+    </div>
+    <div class="favorite_cards">
+      <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
+      <h3>Monstera</h3>
+    </div>
+  </section>
 
-    <article>
-      <h3>Sustainability</h3>
-      <p>
-        Don’t toss dead plants. learn to care for them! Propagate, swap and grow your collection
-        sustainably for free.
-      </p>
-    </article>
+  <section>
+    <h2>Our pillars</h2>
+    <div class="pillars">
+      <article>
+        <h3>Vitality</h3>
+        <p>
+          Plants do more than beautify your home. they teach you about nature, purify the air, and
+          boost mental health. Small plants, big perks!
+        </p>
+      </article>
 
-    <article>
-      <h3>Collaboration</h3>
-      <p>
-        PlantSwap brings neighbors together through plant swaps making our community more connected,
-        lively, and green!
-      </p>
-    </article>
+      <article>
+        <h3>Sustainability</h3>
+        <p>
+          Don’t toss dead plants. learn to care for them! Propagate, swap and grow your collection
+          sustainably for free.
+        </p>
+      </article>
+
+      <article>
+        <h3>Collaboration</h3>
+        <p>
+          PlantSwap brings neighbors together through plant swaps making our community more
+          connected, lively, and green!
+        </p>
+      </article>
+    </div>
   </section>
 </template>
 
@@ -50,7 +70,6 @@
     height: auto;
     display: flex;
     flex-flow: column;
-    gap: 1rem;
     padding: 1rem;
     background: var(--sec-color);
     border-radius: 0.5rem;
