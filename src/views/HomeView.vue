@@ -3,27 +3,7 @@
 <template>
   <section class="hero">
     <h1>Swap, Grow, Thrive, repeat</h1>
-    <div></div>
     <h2>Connecting community with plants</h2>
-  </section>
-
-  <section>
-    <h2>Our favorite plants</h2>
-    <div class="favorite_plants">
-      <div class="favorite_cards">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <h3>Monstera</h3>
-      </div>
-      <div class="favorite_cards">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <h3>Monstera</h3>
-      </div>
-      <div class="favorite_cards">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <h3>Monstera</h3>
-      </div>
-    </div>
-    <a class="link_button" href="/plants">More Plants</a>
   </section>
 
   <section>
@@ -84,19 +64,6 @@
     @media (min-width: 770px) {
       width: 30%;
     }
-  }
-}
-
-.link_button {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 0.5rem;
-  background-color: var(--accent-color);
-
-  &:hover {
-    background-color: var(--text-color);
-    color: var(--bg-color);
   }
 }
 </style>

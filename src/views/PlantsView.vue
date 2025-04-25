@@ -6,9 +6,9 @@
       plant? Check out our selection below.
     </p>
   </section>
-  <section class="plants">
+  <section>
     <div class="filter">
-      <span>Filter by:</span>
+      <span>Filter by :</span>
       <button class="filter_button">Tropical</button>
       <button class="filter_button">Fast-Growing</button>
       <button class="filter_button">Low Maintenance</button>
@@ -17,68 +17,68 @@
       <button class="filter_button">Drought-Tolerant</button>
       <button class="filter_button">Pet Friendly</button>
     </div>
+  </section>
 
-    <div class="wrapper">
-      <article class="plant_card">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <div class="plant_content">
-          <h3>Monstera</h3>
-          <p>
-            Monstera is a popular tropical houseplant known for its large, glossy, fenestrated
-            (hole-filled) leaves.
-          </p>
-        </div>
-        <a class="link" href="/plants">More info</a>
-        <div class="tags">
-          <ul>
-            <li class="tag">Tropical</li>
-            <li class="tag">Fast-Growing</li>
-            <li class="tag">Low Maintenance</li>
-            <li class="tag">Moderate Water</li>
-          </ul>
-        </div>
-      </article>
+  <section class="plants">
+    <article class="plant_card">
+      <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
+      <div class="plant_content">
+        <h3>Monstera</h3>
+        <p>
+          Monstera is a popular tropical houseplant known for its large, glossy, fenestrated
+          (hole-filled) leaves.
+        </p>
+      </div>
+      <a class="link" href="/plants">More info</a>
+      <div class="tags">
+        <ul>
+          <li class="tag">Tropical</li>
+          <li class="tag">Fast-Growing</li>
+          <li class="tag">Low Maintenance</li>
+          <li class="tag">Moderate Water</li>
+        </ul>
+      </div>
+    </article>
 
-      <article class="plant_card">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <div class="plant_content">
-          <h3>Monstera</h3>
-          <p>
-            Monstera is a popular tropical houseplant known for its large, glossy, fenestrated
-            (hole-filled) leaves.
-          </p>
-        </div>
-        <a class="link" href="/plants">More info</a>
-        <div class="tags">
-          <ul>
-            <li class="tag">Tropical</li>
-            <li class="tag">Fast-Growing</li>
-            <li class="tag">Low Maintenance</li>
-            <li class="tag">Moderate Water</li>
-          </ul>
-        </div>
-      </article>
+    <article class="plant_card">
+      <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
+      <div class="plant_content">
+        <h3>Monstera</h3>
+        <p>
+          Monstera is a popular tropical houseplant known for its large, glossy, fenestrated
+          (hole-filled) leaves.
+        </p>
+      </div>
+      <a class="link" href="/plants">More info</a>
+      <div class="tags">
+        <ul>
+          <li class="tag">Tropical</li>
+          <li class="tag">Fast-Growing</li>
+          <li class="tag">Low Maintenance</li>
+          <li class="tag">Moderate Water</li>
+        </ul>
+      </div>
+    </article>
 
-      <article class="plant_card">
-        <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
-        <div class="plant_content">
-          <h3>Monstera</h3>
-          <p>
-            Monstera is a popular tropical houseplant known for its large, glossy, fenestrated
-            (hole-filled) leaves.
-          </p>
-        </div>
-        <a class="link" href="/plants">More info</a>
-        <div class="tags">
-          <ul>
-            <li class="tag">Tropical</li>
-            <li class="tag">Fast-Growing</li>
-            <li class="tag">Low Maintenance</li>
-            <li class="tag">Moderate Water</li>
-          </ul>
-        </div>
-      </article>
-    </div>
+    <article class="plant_card">
+      <img src="https://i.pinimg.com/736x/fb/2c/5f/fb2c5f8873fab78087317653d5b72dcc.jpg" />
+      <div class="plant_content">
+        <h3>Monstera</h3>
+        <p>
+          Monstera is a popular tropical houseplant known for its large, glossy, fenestrated
+          (hole-filled) leaves.
+        </p>
+      </div>
+      <a class="link" href="/plants">More info</a>
+      <div class="tags">
+        <ul>
+          <li class="tag">Tropical</li>
+          <li class="tag">Fast-Growing</li>
+          <li class="tag">Low Maintenance</li>
+          <li class="tag">Moderate Water</li>
+        </ul>
+      </div>
+    </article>
   </section>
 </template>
 
@@ -115,7 +115,7 @@
   }
 }
 
-.wrapper {
+.plants {
   display: flex;
   flex-flow: row wrap;
   gap: 1.5rem;
@@ -168,6 +168,7 @@
   border: none;
   border-radius: 0.5rem;
   background-color: var(--accent-color);
+  font-size: 18px;
 
   &:nth-of-type(2n) {
     background-color: var(--orange);

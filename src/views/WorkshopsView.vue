@@ -101,6 +101,14 @@
   &:hover img {
     transform: scale(1.03);
   }
+
+  @media (min-width: 770px) {
+    width: 40%;
+  }
+
+  @media (min-width: 1024px) {
+    width: 30%;
+  }
 }
 
 .workshop_image {
