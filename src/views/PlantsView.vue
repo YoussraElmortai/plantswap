@@ -29,7 +29,6 @@
           (hole-filled) leaves.
         </p>
       </div>
-      <a class="link" href="/plants">More info</a>
       <div class="tags">
         <ul>
           <li class="tag">Tropical</li>
@@ -49,7 +48,6 @@
           (hole-filled) leaves.
         </p>
       </div>
-      <a class="link" href="/plants">More info</a>
       <div class="tags">
         <ul>
           <li class="tag">Tropical</li>
@@ -69,7 +67,6 @@
           (hole-filled) leaves.
         </p>
       </div>
-      <a class="link" href="/plants">More info</a>
       <div class="tags">
         <ul>
           <li class="tag">Tropical</li>

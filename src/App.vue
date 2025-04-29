@@ -28,7 +28,6 @@ import { RouterLink, RouterView } from 'vue-router'
 nav {
   width: 100%;
   font-size: 12px;
-  padding: 2rem 3rem;
   display: flex;
   flex-flow: row;
   justify-content: space-between;

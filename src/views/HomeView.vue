@@ -6,6 +6,42 @@
     <h2>Connecting community with plants</h2>
   </section>
 
+  <section class="reasons">
+    <div class="">
+      <h2>7 Reasons Why You Should Start Keeping Plants</h2>
+      <ol>
+        <li>
+          They’re the only roommates that never steal your food – but they might judge you silently
+          for eating that third slice of pizza.
+        </li>
+        <li>
+          Instant mood boosters – because staring at a leafy friend is cheaper than therapy (and
+          they don’t talk back).
+        </li>
+        <li>
+          You’ll finally have a valid excuse to talk to yourself – “Just checking if my fern needs
+          water… or emotional support.”
+        </li>
+        <li>
+          Free air fresheners – unlike that suspiciously strong candle that smells like “ocean
+          breeze” but burns your nostrils.
+        </li>
+        <li>
+          They make you look like you have your life together – even if your laundry pile has formed
+          its own ecosystem.
+        </li>
+        <li>
+          Drama-free companionship – no ghosting, just the occasional dramatic wilt when you forget
+          they exist.
+        </li>
+        <li>
+          Survival of the fittest (for you AND them) – if they live, you’re a plant whisperer. If
+          they die… well, it was a “learning experience.”
+        </li>
+      </ol>
+    </div>
+  </section>
+
   <section>
     <h2>Our pillars</h2>
     <div class="pillars">
@@ -40,6 +76,21 @@
 .hero {
   & h1 {
     margin-bottom: 0.5rem;
+  }
+}
+
+.reasons {
+  background: var(--text-color);
+  padding: 2rem 2rem;
+  color: var(--bg-color);
+  border-radius: 0.5rem;
+
+  & ol {
+    font-size: 20px;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    gap: 1.5rem;
   }
 }
 

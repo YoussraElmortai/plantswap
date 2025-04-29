@@ -34,6 +34,11 @@ body {
   height: 100vh;
   background: var(--bg-color);
   color: var(--text-color);
+  padding: 2rem 1.5rem;
+
+  @media (min-width: 770px) {
+    padding: 2rem 3rem;
+  }
 }
 
 h1,
@@ -73,7 +78,7 @@ nav {
 
 main {
   flex-grow: 1;
-  padding: 2rem 3rem;
+
 }
 
 .intro {
@@ -85,9 +90,4 @@ main {
 
 section {
   margin-bottom: 3.2rem;
-}
-
-
-footer {
-  padding: 2rem 3rem;
 }
