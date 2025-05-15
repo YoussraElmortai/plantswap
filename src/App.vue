@@ -25,6 +25,10 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+header {
+  margin-bottom: 3rem;
+}
+
 nav {
   width: 100%;
   font-size: 12px;
