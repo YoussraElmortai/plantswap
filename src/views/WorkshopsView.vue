@@ -22,11 +22,13 @@
         </p>
         <ul class="workshop_data">
           <li>OBA Linnaeusstraat</li>
-          <li>Gratis</li>
-          <li>Zaterdag 3 juni 2024</li>
+          <li>free</li>
+          <li>Saturday june 3th 2024</li>
         </ul>
+        <button>Sign up</button>
       </div>
     </article>
+
     <article class="workshop_card">
       <span></span>
       <div class="workshop_image">
@@ -42,11 +44,13 @@
         </p>
         <ul class="workshop_data">
           <li>OBA Linnaeusstraat</li>
-          <li>Gratis</li>
-          <li>Zaterdag 3 juni 2024</li>
+          <li>free</li>
+          <li>Saturday june 3th 2024</li>
         </ul>
+        <button>Sign up</button>
       </div>
     </article>
+
     <article class="workshop_card">
       <span></span>
       <div class="workshop_image">
@@ -62,9 +66,10 @@
         </p>
         <ul class="workshop_data">
           <li>OBA Linnaeusstraat</li>
-          <li>Gratis</li>
-          <li>Zaterdag 3 juni 2024</li>
+          <li>free</li>
+          <li>Saturday june 3th 2024</li>
         </ul>
+        <button>Sign up</button>
       </div>
     </article>
   </section>
@@ -80,7 +85,6 @@
 .workshop_card {
   position: relative;
   z-index: 1;
-  border: solid;
   border-radius: 0.5rem;
   height: 30rem;
   width: 100%;
@@ -88,18 +92,19 @@
   flex-flow: column;
   justify-content: end;
   overflow: hidden;
+  background-color: rgba(8, 33, 37, 0.94);
 
   & img {
     position: absolute;
     z-index: -1;
-    height: 100%;
+    height: 60%;
     width: 100%;
     object-fit: cover;
     transition: all 0.2s ease-out;
   }
 
   &:hover img {
-    transform: scale(1.03);
+    transform: scale(1.1);
   }
 
   @media (min-width: 770px) {
@@ -108,6 +113,11 @@
 
   @media (min-width: 1024px) {
     width: 30%;
+  }
+
+  & button {
+    width: fit-content;
+    align-self: flex-end;
   }
 }
 
@@ -118,9 +128,9 @@
   background: linear-gradient(
     10deg,
     rgba(10, 26, 13, 1) 0%,
-    rgba(8, 33, 37, 0.85) 12%,
-    rgba(72, 112, 88, 0.71) 65%,
-    rgba(82, 117, 94, 0.62) 76%,
+    rgba(8, 33, 37, 0.94) 52%,
+    rgba(72, 112, 88, 0.664) 75%,
+    rgba(82, 117, 94, 0.62) 82%,
     rgba(242, 241, 240, 0.56) 100%
   );
 }
@@ -130,7 +140,7 @@
   color: var(--bg-color);
   display: flex;
   flex-flow: column;
-  padding: 1rem;
+  padding: 1.2rem;
   gap: 1rem;
 
   & ul {

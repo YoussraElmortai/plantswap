@@ -7,7 +7,7 @@
   </section>
 
   <section class="reasons">
-    <div class="">
+    <div class="reasons_list">
       <h2>4 Reasons Why You Should Start Keeping Plants</h2>
       <ol>
         <li>
