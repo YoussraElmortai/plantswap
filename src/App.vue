@@ -55,4 +55,10 @@ nav a {
     border-bottom: solid var(--accent-color);
   }
 }
+
+footer {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
 </style>
