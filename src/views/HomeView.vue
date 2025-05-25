@@ -28,6 +28,9 @@
         </li>
       </ol>
     </div>
+    <div class="plant">
+      <canvas> </canvas>
+    </div>
   </section>
 
   <section>
@@ -68,10 +71,20 @@
 }
 
 .reasons {
-  background: var(--text-color);
-  padding: 2rem 2rem;
-  color: var(--bg-color);
-  border-radius: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5rem;
+
+  & div {
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
+  }
+
+  & .reasons_list {
+    background: var(--text-color);
+    color: var(--bg-color);
+    max-width: 40rem;
+  }
 
   & ol {
     font-size: 20px;
@@ -80,11 +93,17 @@
     padding: 1rem;
     gap: 1.5rem;
   }
+
+  & .plant {
+    background: var(--sec-color);
+    width: 40rem;
+  }
 }
 
 .pillars {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   gap: 2rem;
 
   & article {
