@@ -28,9 +28,7 @@
         </li>
       </ol>
     </div>
-    <div class="plant">
-      <canvas> </canvas>
-    </div>
+    <div class="plant"></div>
   </section>
 
   <section>
@@ -78,6 +76,11 @@
   & div {
     padding: 2rem 2rem;
     border-radius: 0.5rem;
+
+    @media (min-width: 770px) {
+      flex: 1;
+      min-width: 0;
+    }
   }
 
   & .reasons_list {

@@ -78,7 +78,6 @@ nav {
 
 main {
   flex-grow: 1;
-
 }
 
 .intro {
@@ -100,4 +99,9 @@ button {
   cursor: pointer;
   font-size: 18px;
   color: var(--text-color);
+
+  &:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+  }
 }
