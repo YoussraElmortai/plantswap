@@ -118,6 +118,14 @@
     background: var(--sec-color);
     border-radius: 0.5rem;
 
+    &:nth-of-type(2n) {
+      background-color: var(--accent-color);
+    }
+
+    &:nth-of-type(3n) {
+      background-color: var(--orange);
+    }
+
     @media (min-width: 770px) {
       width: 30%;
     }

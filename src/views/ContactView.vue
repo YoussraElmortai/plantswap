@@ -148,6 +148,7 @@ export default {
   flex-flow: column;
   gap: 0.5rem;
   padding: 0.2rem;
+  width: 100%;
 }
 .contact {
   display: flex;
@@ -193,7 +194,7 @@ export default {
 
 .name_inputs {
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
 }
 
 .contact_inputs {

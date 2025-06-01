@@ -3,14 +3,13 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
+  <div class="blob"></div>
   <header>
     <nav>
-      <RouterLink to="/">Plantswap</RouterLink>
-      <div>
-        <RouterLink to="/plants">plants </RouterLink>
-        <RouterLink to="/workshops">workshops</RouterLink>
-        <RouterLink to="/contact">contact</RouterLink>
-      </div>
+      <RouterLink to="/"><img src="./assets/logo.svg" /></RouterLink>
+      <RouterLink to="/plants">plants </RouterLink>
+      <RouterLink to="/workshops">workshops</RouterLink>
+      <RouterLink to="/contact">contact</RouterLink>
     </nav>
   </header>
   <main>
@@ -25,6 +24,15 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped>
+.blob {
+  position: absolute;
+  height: 120px;
+  width: 120px;
+  background: var(--accent-color);
+  z-index: -1000;
+  border-radius: 100%;
+}
+
 header {
   margin-bottom: 3rem;
 }
@@ -35,6 +43,13 @@ nav {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
+  align-items: end;
+
+  & div {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
 }
 
 nav a.router-link-exact-active {
