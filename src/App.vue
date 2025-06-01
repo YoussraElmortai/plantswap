@@ -1,9 +1,61 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
+import { ref, onMounted, onUnmounted } from 'vue'
+import { gsap } from 'gsap'
+
+const blob = ref(null)
+const mouseX = ref(0)
+const mouseY = ref(0)
+const posX = ref(0)
+const posY = ref(0)
+let animationFrame = null
+
+const updateBlobPosition = () => {
+  posX.value = gsap.utils.interpolate(posX.value, mouseX.value, 0.2)
+  posY.value = gsap.utils.interpolate(posY.value, mouseY.value, 0.2)
+
+  gsap.to(blob.value, {
+    x: posX.value,
+    y: posY.value,
+    duration: 0.8,
+    ease: 'power2.out',
+  })
+
+  animationFrame = requestAnimationFrame(updateBlobPosition)
+}
+
+const handleMouseMove = (e) => {
+  mouseX.value = Math.min(
+    Math.max(e.clientX, blob.value.offsetWidth / 2),
+    window.innerWidth - blob.value.offsetWidth / 2,
+  )
+  mouseY.value = Math.min(
+    Math.max(e.clientY, blob.value.offsetHeight / 2),
+    window.innerHeight - blob.value.offsetHeight / 2,
+  )
+}
+
+onMounted(() => {
+  posX.value = window.innerWidth / 2 - blob.value.offsetWidth / 2
+  posY.value = window.innerHeight / 2 - blob.value.offsetHeight / 2
+
+  gsap.set(blob.value, {
+    x: posX.value,
+    y: posY.value,
+  })
+
+  window.addEventListener('mousemove', handleMouseMove)
+  updateBlobPosition()
+})
+
+onUnmounted(() => {
+  window.removeEventListener('mousemove', handleMouseMove)
+  cancelAnimationFrame(animationFrame)
+})
 </script>
 
 <template>
-  <div class="blob"></div>
+  <div ref="blob" class="blob"></div>
   <header>
     <nav>
       <RouterLink to="/"><img src="./assets/logo.svg" /></RouterLink>
@@ -25,12 +77,25 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style scoped>
 .blob {
-  position: absolute;
-  height: 120px;
-  width: 120px;
-  background: var(--accent-color);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 220px;
+  aspect-ratio: 1;
+  background: linear-gradient(to right, var(--link-color), var(--sec-color), #b4edaf);
   z-index: -1000;
+  pointer-events: none;
+  transform-origin: center;
   border-radius: 100%;
+  filter: blur(60px);
+  opacity: 0.5;
+  animation: spin infinite 20s;
+}
+
+@keyframes spin {
+  50% {
+    scale: 1 1.5;
+  }
 }
 
 header {
@@ -53,7 +118,7 @@ nav {
 }
 
 nav a.router-link-exact-active {
-  border-bottom: solid var(--sec-color);
+  color: var(--orange);
 }
 
 nav a {
@@ -67,7 +132,7 @@ nav a {
   transition: all ease-out 0.2s;
 
   &:hover {
-    border-bottom: solid var(--accent-color);
+    color: var(--orange);
   }
 }
 

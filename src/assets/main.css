@@ -12,7 +12,7 @@
   --text-color: #262f22;
   --sec-color: #8ea879;
   --orange: #eaa930;
-  --link_color: #90f695;
+  --link-color: #90f695;
   --accent-color: #caecaf;
 }
 
@@ -35,6 +35,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   padding: 2rem 1.5rem;
+  overflow-x: hidden;
 
   @media (min-width: 770px) {
     padding: 2rem 3rem;
