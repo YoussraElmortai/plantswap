@@ -28,7 +28,6 @@
         </li>
       </ol>
     </div>
-    <div class="plant"></div>
   </section>
 
   <section>
@@ -59,6 +58,15 @@
       </article>
     </div>
   </section>
+
+  <section class="carousel">
+    <ul>
+      <li>
+        <img src="https://i.pinimg.com/736x/e7/cd/39/e7cd398b942832c2acf09610cc653be9.jpg" />
+        <h3>Plant name</h3>
+      </li>
+    </ul>
+  </section>
 </template>
 
 <style scoped>
@@ -76,11 +84,6 @@
   & div {
     padding: 2rem 2rem;
     border-radius: 0.5rem;
-
-    @media (min-width: 770px) {
-      flex: 1;
-      min-width: 0;
-    }
   }
 
   & .reasons_list {
@@ -95,11 +98,6 @@
     flex-flow: column;
     padding: 1rem;
     gap: 1.5rem;
-  }
-
-  & .plant {
-    background: var(--sec-color);
-    width: 40rem;
   }
 }
 

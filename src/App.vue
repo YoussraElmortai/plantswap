@@ -59,9 +59,11 @@ onUnmounted(() => {
   <header>
     <nav>
       <RouterLink to="/"><img src="./assets/logo.svg" /></RouterLink>
-      <RouterLink to="/plants">plants </RouterLink>
-      <RouterLink to="/workshops">workshops</RouterLink>
-      <RouterLink to="/contact">contact</RouterLink>
+      <div>
+        <RouterLink to="/plants">plants </RouterLink>
+        <RouterLink to="/workshops">workshops</RouterLink>
+        <RouterLink to="/contact">contact</RouterLink>
+      </div>
     </nav>
   </header>
   <main>
@@ -112,8 +114,8 @@ nav {
 
   & div {
     display: flex;
-    flex-flow: row wrap;
-    gap: 1rem;
+    flex-flow: row;
+    gap: 1.5rem;
   }
 }
 
@@ -124,7 +126,7 @@ nav a.router-link-exact-active {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  font-size: 18px;
+  font-size: 20px;
   text-decoration: none;
   color: inherit;
   padding: 0.3rem 1rem;
@@ -140,5 +142,9 @@ footer {
   padding: 2rem;
   display: flex;
   justify-content: center;
+
+  & p {
+    font-weight: bold;
+  }
 }
 </style>
