@@ -82,7 +82,7 @@ onUnmounted(() => {
   position: fixed;
   left: 0;
   top: 0;
-  height: 220px;
+  height: 320px;
   aspect-ratio: 1;
   background: linear-gradient(to right, var(--link-color), var(--sec-color), #b4edaf);
   z-index: -1000;

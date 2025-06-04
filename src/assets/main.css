@@ -70,12 +70,11 @@ p {
 }
 
 a {
-  color: inherit;
+  color: var(--orange);
   text-decoration: none;
   transition: all 0.2s ease-out;
 
   &:hover {
-    color: var(--orange);
     text-decoration: underline;
   }
 }

@@ -60,10 +60,32 @@
   </section>
 
   <section class="carousel">
+    <h2>The making of... de kast</h2>
+    <article class="intro">
+      <p>
+        The first Neighborhood Campus "stekjeskast" (cutting box) was made by children from the
+        Maakplaats 021 at the OBA Javaplein. Here, children from the neighborhood aged 8 and up
+        learn, among other things, 3D printing, laser cutting, programming, or making musical
+        instruments.
+      </p>
+    </article>
     <ul>
       <li>
-        <img src="https://i.pinimg.com/736x/e7/cd/39/e7cd398b942832c2acf09610cc653be9.jpg" />
-        <h3>Plant name</h3>
+        <img
+          src="https://plantswap-webapplicatie.vercel.app/_app/immutable/assets/tweede.817ff5ea.avif"
+        />
+      </li>
+
+      <li>
+        <img
+          src="https://plantswap-webapplicatie.vercel.app/_app/immutable/assets/bovenste.63dbcf15.avif"
+        />
+      </li>
+
+      <li>
+        <img
+          src="https://plantswap-webapplicatie.vercel.app/_app/immutable/assets/derde.bbba9ac1.avif"
+        />
       </li>
     </ul>
   </section>
@@ -126,6 +148,33 @@
 
     @media (min-width: 770px) {
       width: 30%;
+    }
+  }
+}
+
+.carousel {
+  & ul {
+    list-style: '';
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
+
+    & li {
+      display: flex;
+      flex-flow: column;
+      justify-content: end;
+      position: relative;
+      height: 30rem;
+      width: 30rem;
+      border-radius: 0.5rem;
+      overflow: hidden;
+
+      & img {
+        z-index: -1;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+      }
     }
   }
 }
