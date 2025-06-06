@@ -3,7 +3,12 @@
 <template>
   <section class="hero">
     <h1>Swap, Grow, Thrive, repeat</h1>
-    <h2>Connecting community with plants</h2>
+    <h2>Connecting community with <span class="accent"> plants</span></h2>
+    <div class="">
+      <img
+        src="https://plantswap-webapplicatie.vercel.app/_app/immutable/assets/derde.bbba9ac1.avif"
+      />
+    </div>
   </section>
 
   <section class="reasons">
@@ -27,6 +32,9 @@
           they die… well, it was a “learning experience.”
         </li>
       </ol>
+    </div>
+    <div class="">
+      <img src="" />
     </div>
   </section>
 
@@ -58,43 +66,24 @@
       </article>
     </div>
   </section>
-
-  <section class="carousel">
-    <h2>The making of... de kast</h2>
-    <article class="intro">
-      <p>
-        The first Neighborhood Campus "stekjeskast" (cutting box) was made by children from the
-        Maakplaats 021 at the OBA Javaplein. Here, children from the neighborhood aged 8 and up
-        learn, among other things, 3D printing, laser cutting, programming, or making musical
-        instruments.
-      </p>
-    </article>
-    <ul>
-      <li>
-        <img
-          src="https://plantswap-webapplicatie.vercel.app/_app/immutable/assets/tweede.817ff5ea.avif"
-        />
-      </li>
-
-      <li>
-        <img
-          src="https://plantswap-webapplicatie.vercel.app/_app/immutable/assets/bovenste.63dbcf15.avif"
-        />
-      </li>
-
-      <li>
-        <img
-          src="https://plantswap-webapplicatie.vercel.app/_app/immutable/assets/derde.bbba9ac1.avif"
-        />
-      </li>
-    </ul>
-  </section>
 </template>
 
 <style scoped>
 .hero {
   & h1 {
     margin-bottom: 0.5rem;
+  }
+
+  & div {
+    height: 50vh;
+    padding: 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
   }
 }
 
@@ -103,15 +92,12 @@
   flex-flow: row wrap;
   gap: 1.5rem;
 
-  & div {
-    padding: 2rem 2rem;
-    border-radius: 0.5rem;
-  }
-
   & .reasons_list {
     background: var(--text-color);
     color: var(--bg-color);
     max-width: 40rem;
+    padding: 2rem 2rem;
+    border-radius: 0.5rem;
   }
 
   & ol {
@@ -148,33 +134,6 @@
 
     @media (min-width: 770px) {
       width: 30%;
-    }
-  }
-}
-
-.carousel {
-  & ul {
-    list-style: '';
-    display: flex;
-    flex-flow: row;
-    gap: 1rem;
-
-    & li {
-      display: flex;
-      flex-flow: column;
-      justify-content: end;
-      position: relative;
-      height: 30rem;
-      width: 30rem;
-      border-radius: 0.5rem;
-      overflow: hidden;
-
-      & img {
-        z-index: -1;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
-      }
     }
   }
 }

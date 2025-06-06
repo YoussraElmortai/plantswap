@@ -114,3 +114,7 @@ button {
     color: var(--bg-color);
   }
 }
+
+.accent {
+  color: var(--orange);
+}
