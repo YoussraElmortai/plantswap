@@ -110,7 +110,7 @@ nav {
   display: flex;
   flex-flow: row;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 
   & div {
     display: flex;
@@ -126,7 +126,7 @@ nav a.router-link-exact-active {
 nav a {
   display: inline-block;
   padding: 0 1rem;
-  font-size: 20px;
+  font-size: 18px;
   text-decoration: none;
   color: inherit;
   padding: 0.3rem 1rem;
